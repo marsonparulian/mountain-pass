@@ -8,17 +8,21 @@ test('renders learn react link', () => {
 });
 
 describe("Default service list", () => {
-  beforeAll(() => {
+  beforeEach(() => {
     render(<App />);
   });
   test("Quick Actions panel should have title and 3 buttons", () => {
     // Title
     expect(screen.getByText(/Quick Links/i)).toBeInTheDocument();
-    // `Add Service` button
-    expect(screen.getByText("Add Service")).toBeInTheDocument();
+    // `Add Service` buttons will be tested on next test.
     // `Deploy Gatsby Website` button
     expect(screen.getByText("Deploy Gatsby Website")).toBeInTheDocument();
     // `Deploy Node Project` button
     expect(screen.getByText("Deploy Node Project")).toBeInTheDocument();
+  });
+  test("Should be 3 `Add Service` buttons", () => {
+    screen.debug();
+    const buttons = screen.getAllByText("Add Service");
+    expect(buttons.length).toEqual(3);
   });
 });

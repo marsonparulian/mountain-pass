@@ -1,10 +1,14 @@
 // Template of service list
 import React from "react";
 import QuickLinksPanel from "../organisms/QuickLinksPanel";
+import ServiceListPanel from "../organisms/ServiceListPanel";
 
 const ServiceListTemplate = () => {
     return (
-        <QuickLinksPanel />
+        <div>
+            <QuickLinksPanel />
+            <ServiceListPanel />
+        </div>
     )
 }
 
