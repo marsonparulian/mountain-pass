@@ -1,10 +1,11 @@
 import logo from '../logo.svg';
 import './App.css';
+import ServiceListPage from "./pages/ServiceListPage";
 
 function App() {
   return (
     <div className="App">
-      <h1>Content of app    </h1>
+      <ServiceListPage />
     </div>
   );
 }
