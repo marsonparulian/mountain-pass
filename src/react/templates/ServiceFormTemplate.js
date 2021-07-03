@@ -1,5 +1,6 @@
 // Service Form template
 import React from "react";
+import PropTypes from "prop-types";
 import ReactModal from "react-modal";
 import ServiceForm from "../organisms/ServiceForm";
 
@@ -16,24 +17,29 @@ class ServiceFormTemplate extends React.Component {
         let content = "loading..";
 
         // If Dialog is open, mount Service Form
-        if (this.props.isDialogOpen) {
+        if (this.props.isOpen) {
             content = <ServiceForm />
         }
 
         return (
             <ReactModal
                 contentLabel="New Service"
-                isOpen={true}>
+                isOpen={this.props.isOpen}>
                 {content}
             </ReactModal>
         )
     }
 }
 
+ServiceFormTemplate.propTypes = {
+    // Is showing service form (in modal) ?
+    isOpen: PropTypes.bool.isRequired
+}
+
 // Default props
 ServiceFormTemplate.defaultProps = {
     // is the dialog containing Service Form open or not
-    isDialogOpen: false
+    isOpen: false
 }
 
 export default ServiceFormTemplate;

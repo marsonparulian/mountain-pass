@@ -7,7 +7,7 @@ class ServiceForm extends React.Component {
     render() {
         return (
             <div>
-                <h2>Service</h2>
+                <h1>Add Service</h1>
                 <form>
 
                     <div>
