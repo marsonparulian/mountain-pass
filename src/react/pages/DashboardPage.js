@@ -1,9 +1,9 @@
-// Page of service list
+// Dashboard page
 import React from "react";
 import ServiceListTemplate from "../templates/ServiceListTemplate";
 import ServiceFormTemplate from "../templates/ServiceFormTemplate";
 
-class ServiceListPage extends React.Component {
+class DashboardPage extends React.Component {
 
     render() {
         return (
@@ -14,4 +14,4 @@ class ServiceListPage extends React.Component {
         )
     }
 }
-export default ServiceListPage;
+export default DashboardPage;
