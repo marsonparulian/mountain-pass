@@ -4,7 +4,7 @@ import ServiceListPage from "./pages/ServiceListPage";
 
 function App() {
   return (
-    <div className="App">
+    <div id="app" className="App">
       <ServiceListPage />
     </div>
   );
