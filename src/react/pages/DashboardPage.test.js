@@ -3,7 +3,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import DashboardPage from "./DashboardPage";
 
-describe("Dashboard page showing Service Form (modal)", () => {
+describe("Dashboard page showing initial Service Form (modal)", () => {
     beforeEach(() => {
         render(<DashboardPage showServiceForm={true} />);
     })
@@ -11,4 +11,7 @@ describe("Dashboard page showing Service Form (modal)", () => {
         // 5 `Add Service`. 1 button in top panel, 2 buttons in service list, 1 header & 1 button in Service form.
         expect(screen.getAllByText("Add Service")).toHaveLength(5);
     })
+    test("Should  have input and label from `name`", () => {
+        expect(screen.getByLabelText("Name")).toBeInTheDocument();
+    });
 })
