@@ -34,8 +34,14 @@ class ServiceForm extends React.Component {
 
 
                     <div>
-                        <Button>Cancel</Button>
-                        <Button>Add Service</Button>
+                        <Button
+                            type="button">
+                            Cancel
+                        </Button>
+                        <Button
+                            type="submit">
+                            Add Service
+                        </Button>
                     </div>
                 </form>
             </div>

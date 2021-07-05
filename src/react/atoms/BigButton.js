@@ -4,7 +4,10 @@ import PropTypes from "prop-types";
 
 const BigButton = (props) => {
     return (
-        <button>{props.children}</button>
+        <button
+            {...props}>
+            {props.children}
+        </button>
     )
 }
 

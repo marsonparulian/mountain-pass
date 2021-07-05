@@ -1,5 +1,5 @@
 // Store
-import { combineReducers, applyMiddleware, createStore } from "react-redux";
+import { combineReducers, applyMiddleware, createStore } from "redux";
 import reduxThunk from "redux-thunk";
 // Import reducers
 import appReducer from "./reducers/appReducer";
@@ -7,7 +7,7 @@ import appReducer from "./reducers/appReducer";
 import appDefaultState from "../defaults/appDefaultState";
 
 // Reducers
-export const rootReducer = combineReducer({
+export const rootReducer = combineReducers({
     app: appReducer
 });
 

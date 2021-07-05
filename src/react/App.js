@@ -1,11 +1,11 @@
 import logo from '../logo.svg';
 import './App.css';
-import DashboardPage from "./pages/DashboardPage";
+import DashboardPageContainer from "../redux/containers/DashboardPageContainer";
 
 function App() {
   return (
     <div id="app" className="App">
-      <DashboardPage />
+      <DashboardPageContainer />
     </div>
   );
 }
