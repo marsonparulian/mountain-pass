@@ -9,7 +9,7 @@ const QuickLinksPanel = (props) => {
             <div>
                 <BigButton
                     type="button"
-                    onClick={props.onAddService}>
+                    onClick={props.handleAddService}>
                     Add Service
                 </BigButton>
                 <BigButton>Deploy Gatsby Website</BigButton>
@@ -20,6 +20,6 @@ const QuickLinksPanel = (props) => {
 }
 
 QuickLinksPanel.propTypes = {
-    onAddService: PropTypes.func.isRequired
+    handleAddService: PropTypes.func.isRequired
 }
 export default QuickLinksPanel;
