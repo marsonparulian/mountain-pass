@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const InputRow = (props) => {
     return (
         <div>
-            <label for={props.for} >{props.labelText}</label>
+            <label htmlFor={props.for} >{props.labelText}</label>
             {props.children}
         </div>
     )
