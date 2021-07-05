@@ -10,7 +10,7 @@ class ServiceListPanel extends React.Component {
                     <Button>Add Service</Button>
                 </div>
                 <div>
-                    // TODO list of service
+                    list of service
                 </div>
                 <Button>Add Service</Button>
             </div>

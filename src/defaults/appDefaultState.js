@@ -1,5 +1,5 @@
 // Generice state for application
-export default {
+const appDefaultState = {
     // To mark the whole app is busy, thus can not receive input / command
     isBusy: false,
     // Should show modal ?
@@ -10,3 +10,4 @@ export default {
         msg: "default message"
     }
 }
+export default appDefaultState;
