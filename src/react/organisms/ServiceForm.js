@@ -15,6 +15,8 @@ class ServiceForm extends React.Component {
         this.props.handleCancel();
     }
     render() {
+        // Form fields
+        const fields = this.props.serviceForm.fields;
         return (
             <div>
                 <h1>Add Service</h1>
@@ -26,7 +28,7 @@ class ServiceForm extends React.Component {
                         <Input
                             name="name"
                             id="name"
-                            value=""
+                            value={fields.name.value}
                         />
                     </InputRow>
 
@@ -36,7 +38,7 @@ class ServiceForm extends React.Component {
                         <Input
                             name="version"
                             id="version"
-                            value=""
+                            value={fields.version.value}
                         />
                     </InputRow>
 

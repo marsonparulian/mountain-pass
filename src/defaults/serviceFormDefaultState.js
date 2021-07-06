@@ -3,10 +3,10 @@
 const serviceFormDefaultState = {
     fields: {
         name: {
-            value: ""
+            value: "Apple"
         },
         version: {
-            value: "",
+            value: "1.0.0",
         }
     }
 }
