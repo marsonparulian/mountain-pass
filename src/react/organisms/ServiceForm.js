@@ -9,10 +9,18 @@ class ServiceForm extends React.Component {
     constructor(props) {
         super(props);
         this.handleCancel = this.handleCancel.bind(this);
+        this.updateFieldValue = this.updateFieldValue.bind(this);
     }
     // Handle `Cancel` button
     handleCancel() {
         this.props.handleCancel();
+    }
+    // Handle change of afield's value
+    updateFieldValue(name, e) {
+        this.props.updateFieldValue(
+            name,
+            e.target.value
+        );
     }
     render() {
         // Form fields
@@ -29,6 +37,7 @@ class ServiceForm extends React.Component {
                             name="name"
                             id="name"
                             value={fields.name.value}
+                            onChange={(e) => this.updateFieldValue("name", e)}
                         />
                     </InputRow>
 
@@ -39,6 +48,7 @@ class ServiceForm extends React.Component {
                             name="version"
                             id="version"
                             value={fields.version.value}
+                            onChange={(e) => this.updateFieldValue("version", e)}
                         />
                     </InputRow>
 
