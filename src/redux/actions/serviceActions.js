@@ -13,3 +13,11 @@ export const showServiceForm = (serviceId = null) => {
         }
     }
 }
+/**
+ * Hide Service form
+ */
+export const hideServiceForm = () => {
+    return {
+        type: actionTypes.HIDE_SERVICE_FORM
+    }
+}

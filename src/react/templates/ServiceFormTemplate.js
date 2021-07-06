@@ -2,7 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import ReactModal from "react-modal";
-import ServiceForm from "../organisms/ServiceForm";
+import ServiceFormContainer from "../../redux/containers/ServiceFormContainer";
 
 class ServiceFormTemplate extends React.Component {
     constructor(props) {
@@ -18,7 +18,7 @@ class ServiceFormTemplate extends React.Component {
 
         // If Dialog is open, mount Service Form
         if (this.props.isOpen) {
-            content = <ServiceForm />
+            content = <ServiceFormContainer />
         }
 
         return (

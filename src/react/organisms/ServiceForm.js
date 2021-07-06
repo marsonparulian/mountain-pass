@@ -6,6 +6,14 @@ import InputRow from "../molecules/InputRow";
 
 class ServiceForm extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.handleCancel = this.handleCancel.bind(this);
+    }
+    // Handle `Cancel` button
+    handleCancel() {
+        this.props.handleCancel();
+    }
     render() {
         return (
             <div>
@@ -35,7 +43,9 @@ class ServiceForm extends React.Component {
 
                     <div>
                         <Button
-                            type="button">
+                            type="button"
+                            onClick={this.handleCancel}
+                        >
                             Cancel
                         </Button>
                         <Button
