@@ -1,7 +1,7 @@
 // Connect <ServiceForm /> 
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { hideServiceForm } from "../actions/serviceActions";
+import { hideServiceForm, saveService } from "../actions/serviceActions";
 import { updateFieldValue } from "../actions/appActions";
 import ServiceForm from "../../react/organisms/ServiceForm";
 
@@ -13,6 +13,7 @@ const mapDispatchToProps = (dispatch) => {
     return bindActionCreators({
         handleCancel: hideServiceForm,
         updateFieldValue,
+        saveService,
     }, dispatch);
 }
 
