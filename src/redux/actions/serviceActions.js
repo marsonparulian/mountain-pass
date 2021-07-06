@@ -1,4 +1,5 @@
 // Action creators related to Service
+import { postService } from "../../services/serviceService";
 import actionTypes from "./actionTypes";
 
 /**
@@ -19,5 +20,30 @@ export const showServiceForm = (serviceId = null) => {
 export const hideServiceForm = () => {
     return {
         type: actionTypes.HIDE_SERVICE_FORM
+    }
+}
+/**
+ * Save a service and dispatch related actions.
+ * @param {object} data  - Field/value pairs of a service to be saved.
+ */
+export const saveService = (data) => {
+    return async (dispatch) => {
+        dispatch(saveServiceStarted());
+
+        // Save
+        const response = await postService(data);
+        const result = await response.json();
+
+        dispatch(saveServiceSuccess());
+    }
+}
+const saveServiceStarted = () => {
+    return {
+        type: actionTypes.SAVE_SERVICE_STARTED,
+    }
+}
+const saveServiceSuccess = () => {
+    return {
+        type: actionTypes.SAVE_SERVICE_SUCCESS,
     }
 }
