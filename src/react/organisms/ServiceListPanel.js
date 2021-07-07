@@ -30,7 +30,7 @@ class ServiceListPanel extends React.Component {
                 </div>
                 <div>
                     <Button
-                        className="primary"
+                        className="btn btn-primary"
                         onClick={this.handleAddService}>
                         Add Service
                     </Button>
@@ -41,7 +41,7 @@ class ServiceListPanel extends React.Component {
                 <Button
                     type="button"
                     onClick={this.handleAddService}
-                    className="button-box"
+                    className="button-box btn btn-block btn-primary"
                 >
                     Add Service
                 </Button>

@@ -11,11 +11,19 @@ const QuickLinksPanel = (props) => {
             <div>
                 <BigButton
                     type="button"
-                    onClick={props.handleAddService}>
+                    className="btn btn-primary btn-lg"
+                    onClick={props.handleAddService}
+                >
                     Add Service
                 </BigButton>
-                <BigButton>Deploy Gatsby Website</BigButton>
-                <BigButton>Deploy Node Project</BigButton>
+                <BigButton
+                    disabled
+                    className="btn btn-lg disabled"
+                >Deploy Gatsby Website</BigButton>
+                <BigButton
+                    disabled
+                    className="btn btn-lg disabled"
+                >Deploy Node Project</BigButton>
             </div>
         </div>
     )
