@@ -29,10 +29,12 @@ export const hideServiceForm = () => {
 export const saveService = (data) => {
     return async (dispatch) => {
         dispatch(saveServiceStarted());
+        console.log("saving started", data);
 
         // Save
         const response = await postService(data);
         const result = await response.json();
+        console.log("result from response", result);
 
         dispatch(saveServiceSuccess());
     }

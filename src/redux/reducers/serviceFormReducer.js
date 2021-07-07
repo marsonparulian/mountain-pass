@@ -15,7 +15,9 @@ const serviceFormReducer = (state = null, action) => {
             return newState;
         case actionTypes.UPDATE_FIELD_VALUE:
             newState = cloneDeep(state);
-            newState.fields[action.payload.field] = action.payload.value;
+            
+            newState.fields[action.payload.field]["value"] = action.payload.value;
+            
             return newState;
         default:
             return state;
