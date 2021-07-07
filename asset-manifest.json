@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mountain-pass/static/css/main.edbb2016.chunk.css",
+    "main.js": "/mountain-pass/static/js/main.33ae0e72.chunk.js",
+    "main.js.map": "/mountain-pass/static/js/main.33ae0e72.chunk.js.map",
+    "runtime-main.js": "/mountain-pass/static/js/runtime-main.b0dbd3f1.js",
+    "runtime-main.js.map": "/mountain-pass/static/js/runtime-main.b0dbd3f1.js.map",
+    "static/js/2.2f458412.chunk.js": "/mountain-pass/static/js/2.2f458412.chunk.js",
+    "static/js/2.2f458412.chunk.js.map": "/mountain-pass/static/js/2.2f458412.chunk.js.map",
+    "static/js/3.42111fb8.chunk.js": "/mountain-pass/static/js/3.42111fb8.chunk.js",
+    "static/js/3.42111fb8.chunk.js.map": "/mountain-pass/static/js/3.42111fb8.chunk.js.map",
+    "index.html": "/mountain-pass/index.html",
+    "static/css/main.edbb2016.chunk.css.map": "/mountain-pass/static/css/main.edbb2016.chunk.css.map",
+    "static/js/2.2f458412.chunk.js.LICENSE.txt": "/mountain-pass/static/js/2.2f458412.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b0dbd3f1.js",
+    "static/js/2.2f458412.chunk.js",
+    "static/css/main.edbb2016.chunk.css",
+    "static/js/main.33ae0e72.chunk.js"
+  ]
+}
