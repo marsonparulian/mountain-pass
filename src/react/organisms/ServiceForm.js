@@ -79,7 +79,9 @@ class ServiceForm extends React.Component {
                             Cancel
                         </Button>
                         <Button
-                            type="submit">
+                            type="submit"
+                            className="primary"
+                        >
                             Add Service
                         </Button>
                     </div>

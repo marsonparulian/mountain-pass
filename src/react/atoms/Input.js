@@ -4,7 +4,9 @@ import PropTypes from "prop-types";
 
 const Input = (props) => {
     return (
-        <input {...props} />
+        <input
+            className="user-input"
+            {...props} />
     )
 }
 Input.propTypes = {

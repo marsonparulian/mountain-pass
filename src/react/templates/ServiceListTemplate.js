@@ -5,7 +5,7 @@ import ServiceListPanelContainer from "../../redux/containers/ServiceListPanelCo
 
 const ServiceListTemplate = () => {
     return (
-        <div>
+        <div >
             <QuickLinksPanelContainer />
             <ServiceListPanelContainer />
         </div>

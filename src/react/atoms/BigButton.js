@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 const BigButton = (props) => {
     return (
         <button
+            className="box"
             {...props}>
             {props.children}
         </button>

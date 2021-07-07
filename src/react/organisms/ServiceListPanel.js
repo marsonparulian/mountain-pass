@@ -24,9 +24,13 @@ class ServiceListPanel extends React.Component {
         }
 
         return (
-            <div id="service-list-panel">
+            <div id="service-list-panel" className="page__default">
+                <div className="section-header__2">
+                    <h2>Services</h2>
+                </div>
                 <div>
                     <Button
+                        className="primary"
                         onClick={this.handleAddService}>
                         Add Service
                     </Button>
@@ -35,7 +39,10 @@ class ServiceListPanel extends React.Component {
                     {content}
                 </div>
                 <Button
-                    onClick={this.handleAddService}>
+                    type="button"
+                    onClick={this.handleAddService}
+                    className="button-box"
+                >
                     Add Service
                 </Button>
             </div>

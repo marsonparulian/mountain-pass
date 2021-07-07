@@ -5,7 +5,7 @@ import ServiceItem from "./ServiceItem";
 
 const ServiceList = (props) => {
     return (
-        <div>
+        <div className="group">
             {props.services.map((service) => {
                 return <ServiceItem key={service.name} name={service.name} version={service.version} />
             })}

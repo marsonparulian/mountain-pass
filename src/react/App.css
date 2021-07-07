@@ -1,0 +1,241 @@
+/* Page / default */
+
+.page__default {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    position: absolute;
+    height: 596px;
+    left: 100px;
+    right: 100px;
+    top: 284px;
+    background: #FFFFFF;
+    /* gray - light */
+    border: 0.5px solid #999999;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.section-header__2 {
+    /* Section Header */
+    position: static;
+    width: 165px;
+    height: 28px;
+    left: 30px;
+    top: 30px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.section-header__1 {
+    /* Section Header */
+    position: absolute;
+    left: 0%;
+    right: 53.33%;
+    top: 0%;
+    bottom: 17.86%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    /* gray - mid */
+    color: #555555;
+    /* Frame 3 */
+    /* Auto Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 300px;
+    height: 39px;
+    left: 30px;
+    top: 68px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.search-filter {
+    /* SearchFilter */
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 13px;
+    position: static;
+    width: 257px;
+    height: 39px;
+    left: 0px;
+    top: 0px;
+    /* gray - super light */
+    background: #F1F3F4;
+    /* gray - light */
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    border-radius: 99px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}
+
+.group {
+    /* Group */
+    position: static;
+    left: 5.06%;
+    right: 89.85%;
+    top: 31.86%;
+    bottom: 31.86%;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.vector__1 {
+    /* Vector */
+    position: absolute;
+    left: 8.17%;
+    right: 89.85%;
+    top: 54.59%;
+    bottom: 31.86%;
+    border: 2px solid #6C6C6C;
+}
+
+.vector__2 {
+    /* Vector */
+    position: absolute;
+    left: 5.06%;
+    right: 90.98%;
+    top: 31.86%;
+    bottom: 41.04%;
+    border: 2px solid #6C6C6C;
+}
+
+.user-input {
+    /* user input */
+    position: static;
+    display: none;
+    width: 71px;
+    height: 19px;
+    left: 13px;
+    top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    /* gray - mid */
+    color: #555555;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.filter {
+    /* Filter */
+    position: static;
+    width: 36px;
+    height: 19px;
+    left: 36.09px;
+    top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    /* gray - light */
+    color: #999999;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+/* DashboardPage */
+
+.dashboard-page {
+    position: relative;
+    width: 1449px;
+    height: 838px;
+    /* gray - super light */
+    background: #F1F3F4;
+}
+
+/* ServicesGroup */
+
+.services-group {
+    /* Auto Layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 30px;
+    position: absolute;
+    height: 149px;
+    left: 100px;
+    right: 100px;
+    top: 391px
+}
+
+.box {
+    /* Box */
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    /* primary */
+    background: #FF3232;
+    border-radius: 5px;
+}
+
+button.primary {
+    /* Button */
+    position: static;
+    width: 87px;
+    height: 16px;
+    left: 35.5px;
+    top: 12px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    /* white */
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 12px;
+}
+
+.button-box {
+    /* Box */
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    /* gray - light */
+    border: 1px dashed #999999;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
