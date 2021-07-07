@@ -37,8 +37,6 @@ export const getServices = async () => {
     const result = await response.json();
     let services = cloneDeep(result.data);
 
-    console.log("service of page 1 : ", services);
-
     // Total of pages available
     const totalPages = result.totalPages;
 
@@ -59,10 +57,7 @@ export const getServices = async () => {
         for (let i = 0; i < responses.length; i++) {
             const result = await responses[i].json();
 
-            console.log("result of next page", result);
-
             services = services.concat(result.data);
-
         }
         return services;
     } else {
