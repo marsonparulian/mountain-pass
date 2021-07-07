@@ -7,11 +7,11 @@ import { getServices } from "../../services/serviceService";
  */
 export const fetchServices = (page = null) => {
     return async (dispatch) => {
-        const response = await getServices();
-        const result = await response.json();
+        // Fetch services
+        const services = await getServices();
+        
+        dispatch(fetchServicesSuccess(services));
 
-        dispatch(fetchServicesSuccess(result.data));
-        return result;
     }
 }
 
