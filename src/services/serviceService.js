@@ -99,6 +99,9 @@ export const validateSaveFields = async (fields) => {
     return result;
 }
 export const postService = (data) => {
+    // FIXME for testing only
+    return;
+
     const url = "https://interview-web-service.mountainpass.com.au/api/v1/projects";
 
     try {

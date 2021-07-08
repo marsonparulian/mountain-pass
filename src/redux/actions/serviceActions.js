@@ -1,5 +1,5 @@
 // Action creators related to Service
-import { postService } from "../../services/serviceService";
+import { validateSaveFields, postService } from "../../services/serviceService";
 import actionTypes from "./actionTypes";
 import { fetchServices } from "./serviceListActions";
 
@@ -30,6 +30,16 @@ export const hideServiceForm = () => {
 export const saveService = (data) => {
     return async (dispatch) => {
         dispatch(saveServiceStarted());
+
+        // Validate
+        const validationResult = await validateSaveFields(data);
+        if (!validationResult.isValid) {
+            // Failed validation
+            dispatch(saveSuccessFailure({
+                fields: validationResult.fields
+            }));
+            return;
+        }
 
         // Save
         await postService(data);
