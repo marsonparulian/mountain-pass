@@ -4,10 +4,13 @@ import propTypes from "prop-types";
 import ServiceItem from "./ServiceItem";
 
 const ServiceList = (props) => {
+    // Used as key in service list
+    let serviceCounter = 1;
+
     return (
         <div className="group">
             {props.services.map((service) => {
-                return <ServiceItem key={service.name} name={service.name} version={service.version} />
+                return <ServiceItem key={serviceCounter++} name={service.name} version={service.version} />
             })}
         </div>
     )
