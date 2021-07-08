@@ -66,7 +66,38 @@ export const getServices = async () => {
         return;
     }
 }
+/**
+ * 
+ * @param {object} fields  - Key/value pairs of service's fields to be saved
+ * @return {object} - Object with key  `isValid` and `fields`. 
+ * `isValid` indicating if the fields' value is valid or not.
+ */
+export const validateSaveFields = async (fields) => {
+    // To be returned
+    const result = {
+        isValid: true,
+        fields: {
+            name: {
+                msg: '',
+            },
+            version: {
+                msg: '',
+            }
+        }
+    }
 
+    // Validate
+    if (!fields.name) {
+        result.isValid = false;
+        result.fields.name.msg = "Name of service is required";
+    }
+    if (!fields.version) {
+        result.isValid = false;
+        result.fields.version.msg = "Service version is required";
+    }
+
+    return result;
+}
 export const postService = (data) => {
     const url = "https://interview-web-service.mountainpass.com.au/api/v1/projects";
 
