@@ -2,18 +2,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+/**
+ * @unused
+ */
 const InputRow = (props) => {
     return (
-        <div>
+        <div
+            className="form-group"
+        >
             <label htmlFor={props.for} >{props.labelText}</label>
             {props.children}
-        </div>
+        </div >
     )
 }
 InputRow.propTypes = {
     for: PropTypes.string.isRequired,
     labelText: PropTypes.string.isRequired,
-    children: PropTypes.any.isRequired
+    children: PropTypes.any.isRequired,
 }
 
 export default InputRow;
