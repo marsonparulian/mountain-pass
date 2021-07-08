@@ -45,7 +45,7 @@ export const saveService = (data) => {
         await postService(data);
 
         // Dispatch actions
-        dispatch(saveServiceSuccess());
+        dispatch(saveServiceSuccess(data));
         // Fetch all available services
         dispatch(fetchServices());
     }
@@ -55,9 +55,12 @@ const saveServiceStarted = () => {
         type: actionTypes.SAVE_SERVICE_STARTED,
     }
 }
-const saveServiceSuccess = () => {
+const saveServiceSuccess = (service) => {
     return {
         type: actionTypes.SAVE_SERVICE_SUCCESS,
+        payload: {
+            service
+        }
     }
 }
 export const saveSuccessFailure = (payload) => {
