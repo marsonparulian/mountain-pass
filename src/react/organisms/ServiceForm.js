@@ -54,7 +54,14 @@ class ServiceForm extends React.Component {
                                 value={fields.name.value}
                                 onChange={(e) => this.updateFieldValue("name", e)}
                                 className="form-control"
+                                aria-describedby="name-help-block"
                             />
+                            <small
+                                id="name-help-block"
+                                className="form-text text-muted"
+                            >
+                                {fields.name.msg}
+                            </small>
                         </div>
                     </div>
 
@@ -67,7 +74,14 @@ class ServiceForm extends React.Component {
                                 value={fields.version.value}
                                 onChange={(e) => this.updateFieldValue("version", e)}
                                 className="form-control"
+                                aria-describedby="version-help-block"
                             />
+                            <small
+                                id="version-help-block"
+                                className="form-text text-muted"
+                            >
+                                {fields.version.msg}
+                            </small>
                         </div>
                     </div>
 

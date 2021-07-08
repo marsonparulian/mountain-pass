@@ -93,15 +93,13 @@ export const validateSaveFields = async (fields) => {
     }
     if (!fields.version) {
         result.isValid = false;
-        result.fields.version.msg = "Service version is required";
+        result.fields.version.msg = "Version is required";
     }
 
     return result;
 }
 export const postService = (data) => {
-    // FIXME for testing only
-    return;
-
+    // POST endpoint
     const url = "https://interview-web-service.mountainpass.com.au/api/v1/projects";
 
     try {
