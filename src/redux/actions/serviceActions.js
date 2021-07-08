@@ -1,6 +1,7 @@
 // Action creators related to Service
 import { postService } from "../../services/serviceService";
 import actionTypes from "./actionTypes";
+import { fetchServices } from "./serviceListActions";
 
 /**
  *Showing   `service` form.
@@ -29,14 +30,14 @@ export const hideServiceForm = () => {
 export const saveService = (data) => {
     return async (dispatch) => {
         dispatch(saveServiceStarted());
-        console.log("saving started", data);
 
         // Save
-        const response = await postService(data);
-        const result = await response.json();
-        console.log("result from response", result);
+        await postService(data);
 
+        // Dispatch actions
         dispatch(saveServiceSuccess());
+        // Fetch all available services
+        dispatch(fetchServices());
     }
 }
 const saveServiceStarted = () => {

@@ -34,8 +34,6 @@ class ServiceForm extends React.Component {
             version: fields.version.value,
         }
         // action
-        console.log("checking props..", this.props);
-        console.log("before saving..", data);
         this.props.saveService(data);
     }
     render() {
