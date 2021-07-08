@@ -50,3 +50,9 @@ const saveServiceSuccess = () => {
         type: actionTypes.SAVE_SERVICE_SUCCESS,
     }
 }
+export const saveSuccessFailure = (payload) => {
+    return {
+        type: actionTypes.SAVE_SERVICE_FAILURE,
+        payload,
+    }
+}
