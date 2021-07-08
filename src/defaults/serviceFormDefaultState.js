@@ -1,12 +1,19 @@
 // Default state for Service form
 
 const serviceFormDefaultState = {
+    // Indicate if a form just has been successfully submitted
+    saveSuccess: false,
+    // Fields of the form
     fields: {
         name: {
-            value: "Apple"
+            value: "",
+            // helper message
+            msg: "",
         },
         version: {
-            value: "1.0.0",
+            value: "",
+            // Helper message
+            msg: "",
         }
     }
 }
