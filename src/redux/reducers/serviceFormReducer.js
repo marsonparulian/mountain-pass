@@ -6,11 +6,20 @@ import serviceFormDefaultState from "../../defaults/serviceFormDefaultState";
 const serviceFormReducer = (state = null, action) => {
     let newState;
     switch (action.type) {
+        case actionTypes.HIDE_SERVICE_FORM:
+            newState = cloneDeep(state);
+
+            // Reset the saved service data
+            newState.savedService = cloneDeep(serviceFormDefaultState.savedService);
+
+            return newState;
         case actionTypes.SAVE_SERVICE_SUCCESS:
             newState = cloneDeep(state);
 
             // Reset the fields to default value
             newState.fields = cloneDeep(serviceFormDefaultState.fields);
+            // Persist the saved service
+            newState.savedService = cloneDeep(action.payload.service);
 
             return newState;
         case actionTypes.SAVE_SERVICE_FAILURE:
