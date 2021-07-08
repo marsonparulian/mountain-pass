@@ -3,6 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import ReactModal from "react-modal";
 import ServiceFormContainer from "../../redux/containers/ServiceFormContainer";
+import SuccessSaveServiceContainer from "../../redux/containers/SuccessSaveServiceContainer";
 
 class ServiceFormTemplate extends React.Component {
     constructor(props) {
@@ -18,7 +19,12 @@ class ServiceFormTemplate extends React.Component {
 
         // If Dialog is open, mount Service Form
         if (this.props.isOpen) {
-            content = <ServiceFormContainer />
+            // Show success message
+            if (this.props.savedService) {
+                content = <SuccessSaveServiceContainer />
+            } else {
+                content = <ServiceFormContainer />
+            }
         }
 
         return (

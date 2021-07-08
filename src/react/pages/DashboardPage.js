@@ -10,7 +10,10 @@ class DashboardPage extends React.Component {
         return (
             <div>
                 <ServiceListTemplate />
-                <ServiceFormTemplate isOpen={this.props.app.showModal} />
+                <ServiceFormTemplate
+                    isOpen={this.props.app.showModal}
+                    savedService={this.props.serviceForm.savedService}
+                />
             </div>
         )
     }
