@@ -24,7 +24,7 @@ class ServiceListPanel extends React.Component {
         }
 
         return (
-            <div id="service-list-panel" className="page__default">
+            <div id="service-list-panel" className="page__default section">
                 <div className="section-header__2">
                     <h2>Services</h2>
                 </div>

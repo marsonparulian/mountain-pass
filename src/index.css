@@ -12,17 +12,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+button {
+  margin: 8px 12px 8px 0;
+}
+
 .page__default {
   background-color: #fff;
+}
+
+.section {
   padding: 8px 16px;
 }
 
 .service-item {
-  border: 1px solid #555;
+  border: 1px solid #aaa;
   display: grid;
   float: left;
   height: 120px;
-  margin: 8px;
+  margin: 0 8px 8px 0;
   padding: 8px;
   width: 200px;
 }

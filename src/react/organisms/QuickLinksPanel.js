@@ -4,7 +4,7 @@ import BigButton from "../atoms/BigButton";
 
 const QuickLinksPanel = (props) => {
     return (
-        <div id="quick-links">
+        <div id="quick-links" className="section">
             <div className="section-header__1">
                 <h2>Quick Links</h2>
             </div>
