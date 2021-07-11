@@ -16,6 +16,17 @@ button {
   margin: 8px 12px 8px 0;
 }
 
+.btn-primary {
+  background: #FF3232;
+  border-color: #FF3232;
+}
+
+.btn-primary:hover {
+  background: inherit;
+  color: #FF3232;
+  border-color: #FF3232;
+}
+
 .page__default {
   background-color: #fff;
 }
