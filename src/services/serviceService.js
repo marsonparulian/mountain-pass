@@ -119,3 +119,20 @@ export const postService = (data) => {
         console.error(e);
     }
 }
+/**
+ * Filter services by filter.
+ * @param {object} filter  - Object containing filter params. {query:string}
+ * @param {array} services  - The source services to be filtere from.
+ * @return {array} - Filtered services
+ */
+export const filterServices = async (filter, services) => {
+    // Regex object
+    const reg = new RegExp(filter.query, "i");
+
+    // Filter
+    const filtered = services.filter((s) => {
+        return reg.test(s.name);
+    });
+
+    return filtered;
+}
