@@ -9,7 +9,7 @@ export const fetchServices = (page = null) => {
     return async (dispatch) => {
         // Fetch services
         const services = await getServices();
-        
+
         dispatch(fetchServicesSuccess(services));
 
     }
@@ -24,5 +24,23 @@ const fetchServicesSuccess = (services) => {
         payload: {
             services
         }
+    }
+}
+/**
+ * Set the filtered services.
+ * @param {array | null} filteredServices   - The filtered services
+ * @return {action}
+ */
+export const setFilteredServices = (filteredServices) => {
+    return {
+        type: actionTypes.SET_FILTERED_SERVICES,
+        payload: filteredServices,
+    }
+}
+
+export const updateQuery = (query) => {
+    return {
+        type: actionTypes.UPDATE_QUERY,
+        payload: query,
     }
 }
